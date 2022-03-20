@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="browser" value="chrome"/>
+  <test name="TestCheck">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.attends.TestCases.SignupForCreateAccount"/>
+      <class name="com.attends.TestCases.HeaderPageTest"/>
+      <class name="com.attends.TestCases.SamplingPageTest"/>
+      <class name="com.attends.TestCases.SampleCartPageTest"/>
+      <class name="com.attends.TestCases.LoginPageTest"/>
+      <class name="com.attends.TestCases.FooterpageTest"/>
+      <class name="com.attends.TestCases.ProductSelect"/>
+      <class name="com.attends.TestCases.ProductsPageTest"/>
+      <class name="com.attends.TestCases.DropDownPageTest"/>
+      <class name="com.attends.TestCases.TryItFree"/>
+      <class name="com.attends.TestCases.RegisterPageTest"/>
+      <class name="com.attends.TestCases.ForMePageTest"/>
+    </classes>
+  </test> <!-- TestCheck -->
+  <test name="TestCheck(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.attends.TestCases.SignupForCreateAccount">
+        <methods>
+          <include name="loadConfig"/>
+          <include name="afterSuite"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.attends.TestCases.SignupForCreateAccount -->
+      <class name="com.attends.TestCases.RegisterPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="register"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.attends.TestCases.RegisterPageTest -->
+      <class name="com.attends.TestCases.SampleCartPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="Sample" invocation-numbers="0"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.attends.TestCases.SampleCartPageTest -->
+      <class name="com.attends.TestCases.ForMePageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.attends.TestCases.ForMePageTest -->
+      <class name="com.attends.TestCases.DropDownPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.attends.TestCases.DropDownPageTest -->
+      <class name="com.attends.TestCases.SamplingPageTest">
+        <methods>
+          <include name="sampling"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.attends.TestCases.SamplingPageTest -->
+      <class name="com.attends.TestCases.TryItFree">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.attends.TestCases.TryItFree -->
+      <class name="com.attends.TestCases.FooterpageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.attends.TestCases.FooterpageTest -->
+      <class name="com.attends.TestCases.LoginPageTest">
+        <methods>
+          <include name="login" invocation-numbers="0"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.attends.TestCases.LoginPageTest -->
+      <class name="com.attends.TestCases.ProductsPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.attends.TestCases.ProductsPageTest -->
+      <class name="com.attends.TestCases.ProductSelect">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.attends.TestCases.ProductSelect -->
+      <class name="com.attends.TestCases.HeaderPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.attends.TestCases.HeaderPageTest -->
+    </classes>
+  </test> <!-- TestCheck(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [CrossBrowser]">
+  <parameter name="browser" value="FireFox"/>
+  <listeners>
+    <listener class-name="com.attends.Utility.ListenerClass"/>
+  </listeners>
+  <test name="ChromeTest">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="com.attends.TestCases.RegisterPageTest"/>
+      <class name="com.attends.TestCases.LoginPageTest"/>
+      <class name="com.attends.TestCases.ProductsPageTest"/>
+      <class name="com.attends.TestCases.ProductSelect"/>
+      <class name="com.attends.TestCases.TryItFree"/>
+      <class name="com.attends.TestCases.ProductSelect"/>
+    </classes>
+  </test> <!-- ChromeTest -->
+  <test name="FireFoxTest">
+    <parameter name="browser" value="FireFox"/>
+    <classes>
+      <class name="com.attends.TestCases.RegisterPageTest"/>
+      <class name="com.attends.TestCases.LoginPageTest"/>
+      <class name="com.attends.TestCases.ProductsPageTest"/>
+      <class name="com.attends.TestCases.ProductSelect"/>
+      <class name="com.attends.TestCases.TryItFree"/>
+      <class name="com.attends.TestCases.ProductSelect"/>
+    </classes>
+  </test> <!-- FireFoxTest -->
+  <test name="ChromeTest(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="com.attends.TestCases.TryItFree">
+        <methods>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.attends.TestCases.TryItFree -->
+      <class name="com.attends.TestCases.RegisterPageTest">
+        <methods>
+          <include name="loadConfig"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="register"/>
+          <include name="afterSuite"/>
+          <include name="setup"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.attends.TestCases.RegisterPageTest -->
+      <class name="com.attends.TestCases.LoginPageTest">
+        <methods>
+          <include name="login" invocation-numbers="0"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.attends.TestCases.LoginPageTest -->
+      <class name="com.attends.TestCases.ProductSelect">
+        <methods>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.attends.TestCases.ProductSelect -->
+      <class name="com.attends.TestCases.ProductsPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.attends.TestCases.ProductsPageTest -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+  <test name="FireFoxTest(failed)">
+    <parameter name="browser" value="FireFox"/>
+    <classes>
+      <class name="com.attends.TestCases.TryItFree">
+        <methods>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.attends.TestCases.TryItFree -->
+      <class name="com.attends.TestCases.RegisterPageTest">
+        <methods>
+          <include name="loadConfig"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="register"/>
+          <include name="afterSuite"/>
+          <include name="setup"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.attends.TestCases.RegisterPageTest -->
+      <class name="com.attends.TestCases.LoginPageTest">
+        <methods>
+          <include name="login" invocation-numbers="0"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.attends.TestCases.LoginPageTest -->
+      <class name="com.attends.TestCases.ProductSelect">
+        <methods>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.attends.TestCases.ProductSelect -->
+      <class name="com.attends.TestCases.ProductsPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.attends.TestCases.ProductsPageTest -->
+    </classes>
+  </test> <!-- FireFoxTest(failed) -->
+</suite> <!-- Failed suite [CrossBrowser] -->

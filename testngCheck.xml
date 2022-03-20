@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="TestCheck">
+  <parameter name="browser" value="chrome"></parameter>
+    <classes> 
+      <class name="com.attends.TestCases.SignupForCreateAccount"/>
+      <class name="com.attends.TestCases.HeaderPageTest"/>
+      <class name="com.attends.TestCases.SamplingPageTest"/>
+      <class name="com.attends.TestCases.SampleCartPageTest"/>
+      <class name="com.attends.TestCases.LoginPageTest"/>
+      <class name="com.attends.TestCases.FooterpageTest"/>
+      <class name="com.attends.TestCases.ProductSelect"/>
+      <class name="com.attends.TestCases.ProductsPageTest"/>
+      <class name="com.attends.TestCases.DropDownPageTest"/>
+      <class name="com.attends.TestCases.TryItFree"/>
+      <class name="com.attends.TestCases.RegisterPageTest"/>
+      <class name="com.attends.TestCases.ForMePageTest"/>
+    </classes>
+  </test> 
+</suite> 
